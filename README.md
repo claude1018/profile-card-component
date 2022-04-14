@@ -26,8 +26,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/profile-card-component-using-sass-HJDuuNHN9)
+- Live Site URL: [Github Pages](https://claude1018.github.io/profile-card-component/)
 
 ## My process
 
