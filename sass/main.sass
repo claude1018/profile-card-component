@@ -1,0 +1,87 @@
+$dark-cyan: hsl(185, 75%, 39%)
+$very-dark-desaturated-blue: hsl(229, 23%, 23%)
+$dark-grayish-blue: hsl(227, 10%, 46%)
+$dark-gray: hsl(0, 0%, 59%)
+
+$size-200: 0.625rem
+$size-300: 0.875rem
+$size-400: 1rem
+$size-500: 1.5rem
+$size-default: 1.125rem
+$radius: 0.75rem
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+html
+  font-family: 'Kumbh Sans', sans-serif
+  font-size: 16px
+
+body
+  height: 100vh
+
+main
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url('/images/bg-pattern-top.svg') no-repeat -50vw -30%,url('/images/bg-pattern-bottom.svg') no-repeat 50vw 130% ,$dark-cyan
+  background-size: 100%
+  @media only screen and (min-width: 640px)
+    background: url('/images/bg-pattern-top.svg') no-repeat -25vw 150%,url('/images/bg-pattern-bottom.svg') no-repeat 50vw -70% ,$dark-cyan
+
+section.card__profile
+  background: #fff
+  border-radius: $radius
+  margin: 0 $size-500
+  width: min(100%, 20.3125rem)
+  figure
+    position: relative
+    margin-bottom: $size-400 * 4
+    img.bg
+      width: 100%
+      height: auto
+      border-radius: $radius $radius 0 0
+    img.profile
+      position: absolute
+      left: 50%
+      transform: translate(-50%)
+      bottom: -32%
+      border-radius: 50%
+      border: 5px solid #fff
+  .profile__details
+    text-align: center
+    margin-bottom: $size-400
+    h1
+      all: unset
+      font-size: $size-default
+      display: block
+      font-weight: bold
+      color: $very-dark-desaturated-blue
+    small
+      font-weight: normal
+      color: $very-dark-desaturated-blue
+  .achievements
+    border-top: 1px solid lighten($dark-gray, 28)
+    color: $very-dark-desaturated-blue
+    display: flex
+    justify-content: space-around
+    margin-bottom: $size-default + ($size-200 / 2)
+    padding-top: ($size-200 / 3) * 2 + $size-400
+    .wrapper
+      h2
+        font-size: $size-default
+      small
+        font-size: $radius
+        font-weight: 200
+footer
+  text-align: center
+  background: $dark-cyan
+  padding-bottom: $size-200
+  .attribution
+    color: #fff
+    font-size: clamp($size-200, 0.85vw + $size-200, $size-400)
+    a
+      color: $very-dark-desaturated-blue

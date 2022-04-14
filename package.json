@@ -1,0 +1,14 @@
+{
+  "name": "profile-card-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass ./sass/main.sass ./css/main.css --watch"
+  },
+  "author": "claude",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}

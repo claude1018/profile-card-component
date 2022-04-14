@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/bg-pattern-top.svg") no-repeat -50vw -30%, url("/images/bg-pattern-bottom.svg") no-repeat 50vw 130%, hsl(185deg, 75%, 39%);
+  background-size: 100%;
+}
+@media only screen and (min-width: 640px) {
+  main {
+    background: url("/images/bg-pattern-top.svg") no-repeat -25vw 150%, url("/images/bg-pattern-bottom.svg") no-repeat 50vw -70%, hsl(185deg, 75%, 39%);
+  }
+}
+
+section.card__profile {
+  background: #fff;
+  border-radius: 0.75rem;
+  margin: 0 1.5rem;
+  width: min(100%, 20.3125rem);
+}
+section.card__profile figure {
+  position: relative;
+  margin-bottom: 4rem;
+}
+section.card__profile figure img.bg {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+section.card__profile figure img.profile {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -32%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+section.card__profile .profile__details {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section.card__profile .profile__details h1 {
+  all: unset;
+  font-size: 1.125rem;
+  display: block;
+  font-weight: bold;
+  color: hsl(229deg, 23%, 23%);
+}
+section.card__profile .profile__details small {
+  font-weight: normal;
+  color: hsl(229deg, 23%, 23%);
+}
+section.card__profile .achievements {
+  border-top: 1px solid #dedede;
+  color: hsl(229deg, 23%, 23%);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.4375rem;
+  padding-top: 1.4166666667rem;
+}
+section.card__profile .achievements .wrapper h2 {
+  font-size: 1.125rem;
+}
+section.card__profile .achievements .wrapper small {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+footer {
+  text-align: center;
+  background: hsl(185deg, 75%, 39%);
+  padding-bottom: 0.625rem;
+}
+footer .attribution {
+  color: #fff;
+  font-size: clamp(0.625rem, 0.85vw + 0.625rem, 1rem);
+}
+footer .attribution a {
+  color: hsl(229deg, 23%, 23%);
+}
+
+/*# sourceMappingURL=main.css.map */
