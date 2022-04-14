@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   font-size: 16px;
 }
 
@@ -18,12 +18,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/profile-card-component/images/bg-pattern-top.svg") no-repeat -50vw -30%, url("/profile-card-component/images/bg-pattern-bottom.svg") no-repeat 50vw 130%, hsl(185deg, 75%, 39%);
+  background: url('../images/bg-pattern-top.svg') no-repeat -50vw -30%,
+    url('../images/bg-pattern-bottom.svg') no-repeat 50vw 130%,
+    hsl(185deg, 75%, 39%);
   background-size: 100%;
 }
 @media only screen and (min-width: 640px) {
   main {
-    background: url("/profile-card-component/images/bg-pattern-top.svg") no-repeat -25vw 150%, url("/profile-card-component/images/bg-pattern-bottom.svg") no-repeat 50vw -70%, hsl(185deg, 75%, 39%);
+    background: url('../images/bg-pattern-top.svg') no-repeat -25vw 150%,
+      url('../images/bg-pattern-bottom.svg') no-repeat 50vw -70%,
+      hsl(185deg, 75%, 39%);
   }
 }
 
